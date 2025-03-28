@@ -1,3 +1,16 @@
+// Write JavaScript code to achieve the following tasks:
+
+// Define a constructor function Animal with a property type set to "Animal".
+// Add a method sound to Animal.prototype that logs "Animal sound".
+// Define a constructor function Dog that inherits from Animal.
+// Ensure that Dog.prototype inherits from Animal.prototype.
+// Override the sound method in Dog.prototype to log "Bark" instead of "Animal sound".
+// Create an instance of Dog called myDog.
+// Call the sound method on myDog.
+
+
+
+
 // Define the Animal constructor function
 function Animal() {
     this.type = "Animal";
