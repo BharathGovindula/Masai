@@ -1,0 +1,13 @@
+{
+    "name": "my-javascript-project",
+    "version": "1.0.0",
+    "description": "A simple JavaScript project with modules",
+    "type": "module",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "dependencies": {},
+    "devDependencies": {}
+  }
+  
