@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header, footer { background: #333; color: white; text-align: center; padding: 1em; }
+        nav ul { list-style: none; padding: 0; }
+        nav ul li { display: inline; margin: 0 15px; }
+        nav ul li a { color: white; text-decoration: none; }
+        section { padding: 20px; text-align: center; }
+        .gallery { display: flex; justify-content: center; gap: 20px; }
+        .gallery section { width: 30%; }
+        img { width: 100%; height: auto; border-radius: 8px; }
+        a { display: block; margin-top: 10px; text-decoration: none; color: #007BFF; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Image Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="gallery">
+        <section>
+            <img src="image1.jpg" alt="Beautiful landscape">
+            <a href="https://example.com/landscape" target="_blank">Learn more about landscapes</a>
+        </section>
+        <section>
+            <img src="image2.jpg" alt="City skyline at night">
+            <a href="https://example.com/city" target="_blank">Explore city skylines</a>
+        </section>
+        <section>
+            <img src="image3.jpg" alt="Serene beach view">
+            <a href="https://example.com/beach" target="_blank">Discover beautiful beaches</a>
+        </section>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Image Gallery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
