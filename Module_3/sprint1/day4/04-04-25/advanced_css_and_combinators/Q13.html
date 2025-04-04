@@ -1,0 +1,55 @@
+<!-- Problem Statement:
+Create an interactive list that uses combinators and pseudo-classes to provide a dynamic user experience. Use sibling combinators to apply styles to list items based on their position relative to other items.
+
+Requirements:
+Create an ordered list with at least five list items.
+Style the first list item in bold.
+Use an adjacent sibling combinator to apply a background color to the item directly following the first item.
+Apply a general sibling combinator to style all list items following the third item in italics.
+Use the :hover pseudo-class to apply a distinct color to list items when hovered. -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive List</title>
+    <style>
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+
+        li:first-child {
+            font-weight: bold;
+        }
+
+        li:first-child + li {
+            background-color: lightgray;
+        }
+
+        li:nth-child(n+4) {
+            font-style: italic;
+        }
+
+        li:hover {
+            color: darkblue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Interactive Ordered List</h2>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+</body>
+</html>
