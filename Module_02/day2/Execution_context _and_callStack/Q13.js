@@ -60,7 +60,6 @@ const checkout = {
     }
 };
 
-// Testing the system
 checkout.addItem({ name: "Coffee Maker", price: parseFloat("99.95") }); // Fixing price type
 checkout.addItem({ name: "Milk", price: 3.50 });
 checkout.addItem({ name: "Tea", price: "4.50" }); // Invalid price (string)

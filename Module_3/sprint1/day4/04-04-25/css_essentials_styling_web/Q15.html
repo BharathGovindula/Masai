@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #E76F51;
+            padding: 20px;
+            color: darkblue;
+            font-size: 16px;
+        }
+        .container {
+            padding: 5px;
+            max-width: 97%;
+            
+        }
+        .section {
+            text-align: left;
+            margin-bottom: 30px;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+        footer {
+            background-color: #E76F51;
+            padding: 10px;
+            color: white;
+            margin-top: 20px;
+        }
+        .contact-form input, .contact-form textarea {
+            display: block;
+            width: 30%;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#projects">Projects</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hello! I'm a web developer with a passion for creating functional and beautiful web applications.</p>
+            <img src="placeholder.png" alt="A picture of me" width="100">
+        </section>
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="section">
+                <h3>Project One: Personal Blog</h3>
+                <p>Screenshot of my personal blog project</p>
+                <p>A personal blog where I write about web development, programming, and technology.</p>
+                <a href="#">View Project</a>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>Project Two: E-commerce Site</h3>
+                <p>Screenshot of my e-commerce project</p>
+                <p>An e-commerce website built to simulate a real-world online shopping experience.</p>
+                <a href="#">View Project</a>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact" class="section contact-form">
+            <h2>Contact Me</h2>
+            <form>
+                <label>Full Name:</label>
+                <input type="text" name="name" required>
+                <label>Email:</label>
+                <input type="email" name="email" required>
+                <label>Message:</label>
+                <textarea name="message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+        <p>Follow me on <a href="#">Twitter</a> | <a href="#">GitHub</a></p>
+    </footer>
+</body>
+</html>

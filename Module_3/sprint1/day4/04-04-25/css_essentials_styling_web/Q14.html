@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multi-Method CSS Example</title>
+  <style>
+    h1 {
+      color: navy;
+      font-size: 28px;
+      background-color: #f0f0f0; /* Fixed incorrect hex code */
+    }
+    .highlighted-text {
+      background-color: yellow;
+      color: red;
+    }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Main Title</h1>
+  <p style="font-size: 16px; color: #333;">This paragraph has inline styles applied.</p> <!-- Fixed incorrect hex code -->
+  <p class="highlighted-text">This paragraph uses a class-based style.</p>
+  <div id="main-container">
+    <p>This div should have styles from the external stylesheet.</p>
+  </div>
+
+</body>
+</html>
+
+
+<!-- 
+Explanation of Errors and Fixes:
+Incorrect Hex Code for Background in Internal CSS
+
+Error: background-color: #f0f0;
+
+Fix: Changed to background-color: #f0f0f0; (Hex codes must have 3 or 6 characters).
+
+Incorrect Hex Code for Inline Style
+
+Error: color: #3333;
+
+Fix: Changed to color: #333; (Hex color codes must be 3 or 6 characters long). -->
